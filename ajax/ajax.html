@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ajax</title>
+</head>
+<body>
+	
+</body>
+<script>
+ function myajax(obj){
+ 	if(typeof obj !="object"){
+ 		console.log("你的参数必须是对象");
+ 		return;
+ 	}
+ 	if(obj.url=="undefined"){
+ 		console.log("你的参数中必须包括路径");
+ 	}
+ 	//开始初始化对象
+ 	var url = obj.url;
+ 	var type = obj.type || "get";
+ 	var datatype = obj.datatype || "text";
+ 	var data = obj.data || "";
+ 	var temp = "";
+ 	if(obj.data == "string"){
+ 		data = obj.data;
+ 	}else if(obj.data == "object"){
+ 		for(var i in data){
+ 			// "name=zhangsna&id=12"
+ 			temp += i+"="+ data[i] + "&";
+ 		}
+ 		temp = slice(0,-1);
+ 	}
+ 	//开始ajax
+ 	var ajax = new XMLHttpRequest();
+ 	ajax.onload = function(){
+ 		obj.success(ajax.response);
+ 	}
+ 	if(type == "get"){
+ 		ajax.open("get",url+"?"+data);
+ 		ajax.send();
+ 	}
+ 	if(type == "post"){
+ 		ajax.open("post",url);
+ 		ajax.setRequestHeader("content-type","application/x-www-form-urlencoded");
+ 		ajax.send(data);
+ 	}
+ }
+
+
+myajax({
+	url:"url",
+	type:"get",
+	datatype:"json",
+	data:{name:zhangsna,id:12},
+	success:function(data){
+		console.log(data);
+	}
+})
+</script>
+</html>
