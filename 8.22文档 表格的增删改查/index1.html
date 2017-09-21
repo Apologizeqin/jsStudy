@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>对表格的增删改查</title>
+</head>
+<style>
+*{
+	margin:0;   
+	padding:0;
+	text-decoration: none;
+	list-style: none;
+
+}
+main{
+	width: 800px;
+	height: auto;
+	margin:30px auto;
+
+}
+table{
+	height: auto;
+	width: 100%;
+	padding: 5px 10px;
+	border-collapse: collapse;
+	text-align: center;
+}
+caption{
+	font-weight: 700;
+	color: #ff6700;
+}
+tr{
+	border-top: 1px solid red;
+}
+tr:nth-of-type(2n){
+	background: #dfdfdf;
+
+}
+th{
+	border-bottom: 2px solid red;
+	padding: 5px 10px;
+}
+td{
+	padding: 5px 10px;
+}
+button{
+	/*display: block;*/
+	padding: 3px 5px;
+}
+.add{
+	float: right;
+	margin-right: 36px;
+	margin-top: 5px;
+}
+</style>
+<body>
+	<main>
+	 
+		<table>
+			<caption>人员详细名单</caption>
+			<tr>
+				<th>姓名</th>
+				<th>性别</th>
+				<th>年龄</th>
+				<th>籍贯</th>
+				<th>电话</th>
+				<th>操作</th>		
+			</tr>
+			<tbody>
+			</tbody>
+		</table>
+			<button class="add">添加</button>
+	</main>	
+</body>
+<script>
+//input
+//content->input
+//插入到td后面
+//
+//不可编辑状态   更新  inputs.onblur失去焦点的时候   input内容先保存下来newvalue
+//newvalue ->单元格
+
+
+//添加
+    let table = document.querySelector('table');
+    let tbody = document.querySelector('tbody');
+    let add = document.querySelector('.add');
+    let student = [{'name':'张卡','sex':'男','age':12,'dizhi':'晋中','phone':12345678,},
+                   {'name':'张小','sex':'男','age':12,'dizhi':'晋中','phone':12345678,},
+                   {'name':'张会','sex':'男','age':12,'dizhi':'晋中','phone':12345678,},
+                   {'name':'张佳','sex':'女','age':12,'dizhi':'晋中','phone':12345678,},
+                   {'name':'李强','sex':'男','age':12,'dizhi':'晋中','phone':12345678,},
+                   {'name':'张陈','sex':'男','age':12,'dizhi':'晋中','phone':12345678,},];
+//    localStorage.student = student;
+//    因为localstorge里面存储的是键值对所以要转换成键值对。
+	localStorage.student = JSON.stringify(student);   //转换成为字符串
+    JSON.parse(localStorage.student).forEach((value)=>{  //
+        tbody.innerHTML += `
+        		<td>${value.name}</td>
+				<td>${value.sex}</td>
+				<td>${value.age}</td>
+				<td>${value.dizhi}</td>
+				<td>${value.phone}</td>
+				<td><button class="del">删除</button></td>
+        `
+	});
+
+    // console.log(add);
+    add.onclick = function(){
+    	let tr = document.createElement('tr');
+    	tr.innerHTML= `
+    			<td>${'理性'}</td>
+				<td>${'男'}</td>
+				<td>${12}</td>
+				<td>${'晋中'}</td>
+				<td>${1234}</td>
+				<td><button class="del">删除</button></td>
+
+    	`;
+    	tbody.appendChild(tr);
+    }
+//添加
+    let td = document.querySelectorAll('td');
+    // console.log(td);
+    tbody.ondblclick = function(e){   //ondblclick
+    	let ele = e.target;
+    	let inputs = document.createElement('input');
+    	// console.dir(ele);
+    	if(ele.nodeName == "TD" && ele.className !== "del"){
+    		
+    		let val = ele.innerText;
+    		ele.innerText = '';
+    		inputs.value = val;
+    		ele.appendChild(inputs);
+
+
+    		inputs.onblur = function(){
+    			let update = inputs.value;
+    			ele.removeChild(inputs);
+    			ele.innerText = update;
+    		}
+
+    		inputs.onkeydown = function(e){
+    			if(e.keyCode == 13){
+    				let update = inputs.value;
+	    			ele.removeChild(inputs);
+	    			ele.innerText = update;
+
+    			}
+    		}   
+    		//这里的问题是一按下回车键  也就是失去了焦点 会重复再次触发上面的inputs.onblur 所以会报错
+    		//现在的问题就是怎么样让上面的代码在你按下回车键时不会二次触发,想不到方法。。。。。抠脚了
+		}else if(ele.className == "del"){
+				alert("确定要删除吗？");
+    			let del = ele.parentNode;
+    			console.log(del);
+    			let p = del.parentNode;
+    			console.log(p);
+				tbody.removeChild(p);
+    			p = null;
+    		}
+    	
+    }
+
+
+</script>
+</html>

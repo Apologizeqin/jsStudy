@@ -1,0 +1,119 @@
+/*
+* @Author: Apologizeqin
+* @Date:   2017-08-11 20:33:15
+* @Last Modified by:   Apologizeqin
+* @Last Modified time: 2017-08-14 22:51:44
+*/
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+html{
+	width: 100%;
+	height: 100%;
+	background: #f2f2f2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner{
+	width: 1226px;
+	height:460px;
+	background: pink;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.banner ul{
+	width: 100%;
+	height: 100%;
+
+}
+.banner .imgbox li{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 1226px;
+	top: 0;
+}
+.banner .imgbox li:first-child{
+	z-index:2;
+	left: 0;
+}
+.banner img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/*.banner .menu{*/
+	/*width:234px;*/
+	/*height:100%;*/
+	/*bakground:pink;*/
+	/*position: absolute;*/
+	/*top:0;*/
+	/*left:0;*/
+/*}*/
+.banner .btn{
+	z-index: 9999;
+	width: 90px;
+	height: 18px;
+	position: absolute;
+	right: 35px;
+	bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	cursor: pointer;
+}
+.btn li{
+	width: 6px;
+	height: 6px;
+	background: rgba(0, 0, 0, 0.5);
+	border: 2px solid rgba(255, 255, 255, 0.4);
+	border-radius: 50%;
+	font-size: 0;
+
+}
+.btn .hot{
+	background: purple;
+}
+.btn-left{
+	z-index: 99999;
+	display: block;
+	width: 40px;
+	height: 60px;
+	background:rgba(0,0,0,0.1);
+	position: absolute;
+	left: 436px;
+	top: 50%;
+	transform: translateY(-50%);
+	line-height:60px;
+	text-align: center;
+	color: #fff;
+	font-size:30px;
+	font-weight:800;
+}
+.btn-left:hover{
+	background: rgba(0, 0, 0, 0.4);
+}
+.btn-right{
+	z-index: 99999;
+	display: block;
+	width: 40px;
+	height: 60px;
+	background:rgba(0,0,0,0.1);
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	line-height:60px;
+	text-align: center;
+	color: #fff;
+	font-size:30px;
+	font-weight:800;
+}
+.btn-right:hover{
+	background: rgba(0, 0, 0, 0.4);
+}

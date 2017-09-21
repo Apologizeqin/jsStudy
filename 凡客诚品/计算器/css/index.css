@@ -1,0 +1,86 @@
+/*
+* @Author: Apologizeqin
+* @Date:   2017-07-11 09:06:25
+* @Last Modified by:   Apologizeqin
+* @Last Modified time: 2017-07-11 11:43:32
+*/
+.big-box{
+	height:1920px; 
+	width: 1080px;
+	background: red;
+	margin:0 auto ;
+}
+.head{
+	width: 1080px;
+	height: 168px;
+	background: #00a5c4;
+}
+.hleft{
+	width: 174px;
+	height: 168px;
+	margin-left: 50px;
+	/* background: red; */
+	font-size: 56px;
+	line-height: 168px;
+	color: #fafafa;
+	float: left;
+}
+.hright{
+	width: 16px;
+	height: 62px;
+	/* background: pink; */
+	float: right;
+	margin-top: 50px;
+	margin-right:64px;
+}
+.hright .dian{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #fafafa;
+	margin-bottom: 6px;
+
+}
+.view{
+	width: 1080px;
+	height: 561px;
+	background: #f0f0f0;
+}
+.pull{
+	width: 1080px;
+	height: 102px;
+	background: #dfe3e4;
+	font-size: 40px;
+	text-align: center;
+	line-height: 102px;
+	font-weight: bolder;
+}
+.Btn{
+	width: 1080px;
+	height: 1089px;
+	background: #fafafa;
+
+}
+.key{
+	width: 265px;
+	height: 214px;
+	background: #f2f4f4;
+	float: left;
+	margin-right: 6px;
+	margin-bottom: 6px;
+	font-size: 78px;
+	color: #32626b;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 214px;
+}
+.one{
+	margin-right: 0px;
+}
+.two{
+	width: 266px;
+}
+.three{
+	height: 209px;
+	margin-bottom: 0px;  
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<style>
+*{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+ul{
+	width: 400px;
+	height: 400px;
+	position: absolute;;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin:auto;
+	border-top: 1px solid blue;
+	border-left: 1px solid blue;
+}
+ul>li{
+	width: 19px;
+	height: 19px;
+	float:left;
+	border-right: 1px solid blue;
+	border-bottom: 1px solid blue;
+}
+</style>
+<body>
+<div class="qipan">
+	<ul>
+	</ul>
+</div>	
+</body>
+<script>
+let ul = document.querySelector('ul');
+// console.log(ul);
+	// document.onclick = function(e){
+		for(let i=0;i<400;i++){
+			ul.innerHTML +=`
+			<li></li>`;
+		}
+	// }
+
+
+		// for(let i=0;i<400;i++){
+		// 	let lis = document.createElement('li')
+		// 	ul.appendChild(lis);
+		// }
+
+	ul.onclick = function(e){
+		let ele = e.target;
+		console.log(ele);
+		if(ele.nodeName == "LI"){
+			ele.style.background = 'red';
+		}
+	}
+</script>
+</html>

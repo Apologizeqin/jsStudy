@@ -1,0 +1,63 @@
+/*
+* @Author: Apologizeqin
+* @Date:   2017-08-17 09:21:28
+* @Last Modified by:   Apologizeqin
+* @Last Modified time: 2017-08-17 12:09:56
+*/
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+.box{
+	width: 1226px;
+	height: 398px;
+	background: gold;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.title{
+	width: 1226px;
+	height:58px;
+	background: pink;
+	/* margin: 20px auto;  */
+	line-height: 58px;
+}
+.title h1{
+	font-size: 20px;
+	float: left;
+}
+.title button{
+	float: right;
+	margin-top:20px; 
+}
+.box ul{
+	width: 2480px;
+	height: 100%;
+	overflow: hidden;
+	transition: 1s;
+	/* background: #fff; */
+}
+.box li{
+	width: 234px;
+	height: 300px;
+	padding-top: 40px;
+	background: red;
+	float: left;
+	margin-right: 14px;
+	text-align: center;
+}
+.box li a{
+	display: block;
+}
+
+.box ul li img{
+	width: 160px;
+	height: 160px;
+}
+
+.button{
+	color: #ff6700;
+}

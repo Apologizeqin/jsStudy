@@ -1,0 +1,25 @@
+*{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+.qipan{
+	width: 400px;
+	height: 400px;
+	position: absolute;;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin:auto;
+	border-top: 1px solid blue;
+	border-left: 1px solid blue;
+}
+.qipan li{
+	width: 19px;
+	height: 19px;
+	float:left;
+	border-right: 1px solid blue;
+	border-bottom: 1px solid blue;
+}
