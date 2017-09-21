@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>从原型到原型链</title>
+</head>
+<body>
+	
+</body>
+<script>
+function　Person(){
+
+}
+var zhangsan = new Person();
+
+console.log(zhangsan.__proto__ === Person.prototype);
+console.log(Person.prototype.__proto__ === Object.prototype)
+console.log(Object.prototype.__proto__ === null);
+
+</script>
+</html>
