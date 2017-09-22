@@ -117,4 +117,6 @@ let book = document.getElementsByClassName('book-iner')[0];
 
 ​        链接
 
-​	https://apologizeqin.github.io/jsStudy/蓝色情调小画板/index.html
+蓝色情调小画板    表格的增删改查    打字游戏   弹幕效果  电话黄页   仿淘宝放大镜效果   运动类别的网站
+
+张强天猫国际    张强小米商场   2017面试题联系.md     
