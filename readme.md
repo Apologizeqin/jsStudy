@@ -115,4 +115,6 @@ let book = document.getElementsByClassName('book-iner')[0];
 
 ​		后来看到有那么几道面试题，比如说谈谈你对盒模型的理解，谈谈你对boxsize的理解 谈谈你对h5中一些新标签的理解。等等这些面试题考的也确实是你对标签的理解程度。
 
-​        
+​        链接
+
+​	https://apologizeqin.github.io/jsStudy/蓝色情调小画板/index.html
