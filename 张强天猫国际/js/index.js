@@ -13,11 +13,11 @@ window.onload = function() {
         clearInterval(t);
     }
     banner.onmouseleave=function () {
-        t = setInterval(fn, 1000);
+        t = setInterval(fn, 3000);
     }
     let num = 0;
 
-    let t = setInterval(fn, 1000);
+    let t = setInterval(fn, 3000);
 
 
 

@@ -1,0 +1,223 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+i{
+    font-style: normal;
+}
+main{
+    width:1000px;
+    height:600px;
+    /*background: pink;*/
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    border-radius: 30px;
+}
+.drawingboard{
+    width:100%;
+    height:100%;
+    background: url("../img/01.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 30px;
+}
+.draw-left{
+    width:400px;
+    height:600px;
+    background:#2caaf3;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    float: left;
+}
+.top{
+    width:400px;
+    height:380px;
+    /*background: #1897f0;*/
+    padding-top: 20px;
+    border-top-left-radius: 30px;
+    position: relative;
+
+}
+.lunbo{
+    width:300px;
+    height:400px;
+    /*background: #000;*/
+    border-radius: 10px;
+    position: absolute;
+    right:10px;
+    top:10px;
+    overflow: hidden;
+}
+.right{
+    width:300px;
+    height:400px;
+    background: url("../img/01.jpg") no-repeat center center;
+    background-size: cover;
+    float: right;
+    /*margin-right: 10px;*/
+    border-radius: 10px;
+    position: absolute;
+    left:300px;
+    top:0px;
+}
+.lunbo .right:first-child{
+    left:0px;
+    top:0px;
+}
+.right .bi{
+    width:220px;
+    height:35px;
+    /*background: pink;*/
+    margin-top: 50px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+.bi li{
+    width:33%;
+    height:35px;
+    background: #7ae6e6;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.bi li:first-child{
+    border-top-left-radius: 5px ;
+    border-bottom-left-radius:5px;
+}
+.bi li:last-child{
+    border-top-right-radius: 5px ;
+    border-bottom-right-radius:5px;
+}
+.right .xian{
+    width:100%;
+    height:165px;
+    /*background: red;*/
+    margin-top: 20px;
+}
+.xian li{
+    width:50%;
+    height:40px;
+    /*background: gold;*/
+    margin-left: 25%;
+    cursor: pointer;
+}
+.xian li .icon{
+    display: inline;
+    width:50px;
+    height:50px;
+    border:1px solid #fff;
+    padding:3px 8px;
+    margin-left: 10px;
+}
+.crop{
+    display: none;
+    width:300px;
+    height:300px;
+    border:2px dashed #000;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.eraser{
+    display: none;
+    width:40px;
+    height:30px;
+    border:1px solid #ff6700;
+    position: absolute;
+
+}
+.top .seban{
+    width:200px;
+    height:100px;
+    /*background: pink;*/
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.leftt{
+    width:40px;
+    height:180px;
+    /*background:#fff;*/
+    /*margin-top:30px;*/
+    float: right;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    position: fixed;
+    top:70px;
+    left:225px;
+
+}
+.leftt .xiushi{
+    width:40px;
+    height:55px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #2caaf3;
+    text-align: center;
+    line-height: 1.7;
+    font-weight:600;
+    color: #fff;
+    cursor: pointer;
+
+}
+.leftt .hot{
+    background: #eba507;
+}
+.draw-left .bot{
+    width:100%;
+    height:150px;
+    /*background: goldenrod;*/
+}
+.bot .bi{
+    width:300px;
+    height:35px;
+    /*background: pink;*/
+    margin-top: 50px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-between;
+    margin-left:49px;
+}
+.bot .jilu{
+    width:300px;
+    height:35px;
+    margin-top: 50px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-between;
+    margin-left:49px;
+}
+.jilu li{
+    width:49%;
+    height:100%;
+    text-align: center;
+    line-height: 2;
+    background: cyan;
+    border-radius: 5px;
+    cursor: pointer;
+    /*background:purple;*/
+}
+canvas{
+    float: right;
+    border:2px solid #fff;
+    margin: 20px 20px;
+    background: #fff;
+    position: relative;
+
+}
+.mask{
+    width:550px;
+    height:550px;
+    background: rgba(0,0,0,0);
+    position: absolute;
+    right:22px;
+    top:22px;
+
+}

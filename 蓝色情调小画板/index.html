@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小小一画板</title>
+	<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+	<script src="js/index.js"></script>
+	<script src="js/index1.js"></script>
+    <script src="js/animate.js"></script>
+</head>
+<body>
+	<main>
+		<div class="drawingboard">
+			<div class="draw-left">
+                    <div class="top">
+                        <!--第一版************************************8-->
+                    <div class="lunbo">
+                        <div class="right">
+                            <!--第一个bi-->
+                        <ul class="bi">
+                                <li><i class="iconfont icon-qianbi-copy"></i>铅笔</li>
+                                <li><i class="iconfont icon-qianbi"></i>画圆</li>
+                                <li><i class="iconfont icon-xiangpi"></i>橡皮</li>
+                        </ul>
+                        <ul class="xian">
+                            <li>实线:<div class="icon"><i class="iconfont icon-xiantiao-xiexian"></i></div></li>
+                            <li>虚线:<div class="icon"><i class="iconfont icon-e_xuxian"></i></div></li>
+                            <li>裁切:<div class="icon"><i class="iconfont icon-icon_daxiao-"></i></div></li>
+                            <li>文字:<div class="icon"><i class="iconfont icon-xiguan-"></i></div></li>
+                        </ul>
+                        <div class="seban">
+                            描边：<input type="color">
+                            填充：<input type="color">
+                        </div>
+                        </div>
+                        <!--第二版*******************************8-->
+                        <div class="right">
+                            <!--第二个bi-->
+                            <ul class="bi">
+                                <li>矩形</i></li>
+                                <li>五角星</li>
+                                <li>多边形</li>
+                            </ul>
+                            <ul class="xian">
+                                <li>实线:<div class="icon"></div></li>
+                                <li>虚线:<div class="icon"></div></li>
+                                <li>大小:<div class="icon"></div></li>
+                                <li>颜色:<div class="icon"></div></li>
+                            </ul>
+                        </div>
+                        <!--第三版*********************************8-->
+                        <div class="right">
+                            <!--第三个bi-->
+                            <ul class="bi">
+                                <li>正方形</i></li>
+                                <li>画圆</li>
+                                <li></i>多边形</li>
+                            </ul>
+                            <ul class="xian">
+                                <li>实线:<div class="icon"></div></li>
+                                <li>虚线:<div class="icon"></div></li>
+                                <li>裁切:<div class="icon"></div></li>
+                                <li>颜色:<div class="icon"></div></li>
+                            </ul>
+                        </div>
+					</div>
+					<!--左侧按钮*******************************************8-->
+					<div class="leftt">
+						<div class="xiushi hot">设<br>计</div>
+						<div class="xiushi">模<br>板</div>
+						<div class="xiushi">背<br>景</div>
+					</div>
+				</div>
+				<div class="bot">
+					<ul class="bi">
+						<li><i class="iconfont icon-qingkong"></i>清空</li>
+						<li><i class="iconfont icon-shangyibu"></i>上一步</li>
+						<li><i class="iconfont icon-xiayibu"></i>下一步</li>
+					</ul>
+					<ul class="jilu">
+						<li>打开记录</li>
+                        <li><a href="" >保存记录</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<canvas width="550" height="550" >
+			</canvas>
+            <div class="mask">
+
+
+            </div>
+            <div class="eraser"></div>
+            <div class="crop"></div>
+
+		</div>	
+	</main>
+</body>
+</html>

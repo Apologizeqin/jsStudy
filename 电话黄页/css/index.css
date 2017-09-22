@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    width:100%;
+    height:0.4rem;
+    background: pink;
+    border-bottom: 0.02rem solid rgba(0,0,0,0.1);
+    position:fixed;
+    left:0;
+    top:0;
+}
+.daiti{
+    width:100%;
+    height:0.4rem;
+}
+main{
+    width:100%;
+    height:auto;
+    background: pink;
+}
+.lianxi{
+    width:100%;
+    height:100%;
+    /*background: purple;*/
+    display:flex;
+    justify-content: space-around;
+
+}
+.lianxi>li{
+    font-size: 0.32rem;
+    padding-top:0.2rem;
+    padding-bottom: 0.2rem;
+
+
+}
+input{
+    display: block;
+    width:96%;
+    margin-left: 2%;
+    height:0.55rem;
+    margin-top: 0.49rem;
+    border:none;
+    outline: none;
+    background: rgba(0,0,0,0.1);
+    border-radius: 0.3rem;
+    font-size:0.18rem;
+    padding-left: 0.3rem;
+    box-sizing:border-box;
+}
+.tip{
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.1);
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    position: fixed;
+    right: 20px;
+    top: 85px;
+}
+section{
+    width:96%;
+    margin-left: 2%;
+    /*background: pink;*/
+    margin-top: 0.13rem;
+}
+dl{
+    width:100%;
+    height:auto;
+    /*background: rgba(0,0,0,0.1);*/
+}
+dl>dt{
+    width:100%;
+    font-size: 0.3rem;
+    font-weight: 700;
+    /*border-bottom: 0.02rem solid #000;*/
+}
+dl>dd{
+    font-size: 0.3rem;
+    border-bottom: 0.02rem solid rgba(0,0,0,0.1);
+    padding:0.15rem 0.2rem;
+}
+#zimu{
+    /*float: right;*/
+    position: fixed;
+    right:0;
+    top:4rem;
+    font-size: 0.2rem;
+    padding:0.2rem 0.15rem;
+}
+a{
+    color:#000;
+}
