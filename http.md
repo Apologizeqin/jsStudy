@@ -200,3 +200,5 @@ mutipart/form-data     web表单文件上传时使用
 
 ### 9.与http协作的web服务器
 
+验证码    图片验证   手机验证  邮箱验证
+
